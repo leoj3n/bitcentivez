@@ -1,0 +1,19 @@
+<can-import from="./model-edit-property.less" />
+<can-import from="can-event-dom-enter/add-global/"/>
+
+{{#if(viewOnly)}}
+  <span>{{propertyValue}}</span>
+{{else}}
+  {{#if(isEditing)}}
+    <input
+      type="{{type}}"
+      class="form-control"
+      value:from="propertyValue"
+       disabled:from="isDisabled"
+      on:keydown="cancelEdit(scope.event)"
+      on:enter="commitValue(scope.element.value)"
+    />
+  {{else}}
+    <a href="" on:click="makeEditable(scope.event)" title="Edit">{{propertyValue}}</a>
+  {{/if}}
+{{/if}}

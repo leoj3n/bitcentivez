@@ -1,0 +1,9 @@
+<can-import from="./page-contributors.less" />
+<can-import from="./contributors-table/"/>
+
+<div class="container">
+  <h2>Contributors</h2>
+  {{#if(contributors.isResolved)}}
+    <contributors-table contributors:from="contributors.value" />
+  {{/if}}
+</div>

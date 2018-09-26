@@ -1,0 +1,18 @@
+<script type="text/stache" can-autorender id="view">
+	<can-import from="~/components/ui/model-edit-property/" />
+	<ul>
+		{{#each(records)}}
+			<li>
+        <model-edit-property model:from="this" property:raw="name" viewOnly:from="this.viewOnly" />
+      </li>
+		{{/each}}
+	</ul>
+</script>
+<script src="/node_modules/steal/steal.js" main="@empty">
+	import { viewModel, viewAutorender } from 'can';
+	import Entity from '~/components/ui/model-edit-property/meta/fixture';
+
+	Entity.getList({}).then(records => {
+		viewModel('#view').set('records', records);
+	});
+</script>

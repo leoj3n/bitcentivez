@@ -1,0 +1,29 @@
+{
+  "name": "bitcentivez",
+  "description": "Royalties",
+  "license": "MIT",
+  "homepage": "bitcentivez.herokuapp.com",
+  "repository": "https://github.com/leoj3n/bitcentivez",
+  "version": "0.0.1",
+  "main": "install.js",
+  "scripts": {
+    "build": "npm run build --prefix client",
+    "develop-ssr": "npm run develop-ssr --prefix server",
+    "develop-static": "npm run develop-static --prefix server",
+    "install": "node $npm_package_main",
+    "lint": "npm run prettier-multi && npm run prettier-pkg && npm run prettier-html",
+    "start": "npm start --prefix server",
+    "test": "npm run test --prefix server && npm run test --prefix client",
+    "prettier-html": "prettier --parser html --write '**/*.html'",
+    "prettier-multi": "prettier --single-quote --trailing-comma es5 --write '**/*.{js,json,md,less}'",
+    "prettier-pkg": "prettier-package-json --write package.json client/package.json server/package.json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "github:prettier/prettier",
+    "prettier-package-json": "^2.0.1"
+  },
+  "engines": {
+    "node": ">= 6.11.0"
+  }
+}

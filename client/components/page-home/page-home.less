@@ -1,0 +1,144 @@
+page-home {
+  display: block;
+  min-height: 560px;
+  background-size: cover;
+  height: ~'calc(100% - 72px)';
+  transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+
+  .logo {
+    width: 160px;
+  }
+
+  h1 {
+    margin: 8px 0 0;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  div.auth {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+
+    // prettier-ignore
+    .bp-mobile-medium({
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    });
+  }
+
+  div.auth-ui {
+    width: 100%;
+    display: block;
+
+    // prettier-ignore
+    .bp-mobile-medium({
+      width: 270px;
+    });
+
+    div#auth-ui-container {
+      background: white;
+      padding-bottom: 11px;
+
+      // prettier-ignore
+      .bp-mobile-medium({
+        box-shadow: 0px 0px 24px 0px rgba(110,110,110,0.75);
+        -moz-box-shadow: 0px 0px 24px 0px rgba(110,110,110,0.75);
+        -webkit-box-shadow: 0px 0px 24px 0px rgba(110,110,110,0.75);
+      });
+    }
+
+    .auth-branding {
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    ul.sso-providers {
+      margin: 0;
+      padding: 0;
+      top: -16px;
+      list-style: none;
+      justify-content: center;
+
+      position: relative;
+      display: flex;
+      display: -webkit-flex;
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -webkit-justify-content: center;
+
+      li {
+        width: 39px;
+        margin: 7px;
+        color: white;
+        height: 38px;
+        font-size: 12px;
+        border-radius: 2px;
+        border: 0px solid #556d99;
+
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: flex-start;
+        -webkit-justify-content: center;
+
+        a {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        a:hover,
+        a:visited,
+        a:link,
+        a:active {
+          text-decoration: none;
+        }
+
+        span {
+          color: white;
+          padding-left: 2px;
+        }
+
+        img {
+          height: 23px;
+          margin: 0 7px 0 0;
+        }
+
+        &.sso-github {
+          background: #a6a0a0;
+
+          &.one {
+            width: 144px;
+          }
+        }
+      }
+    }
+
+    .auth-error {
+      padding: 4px;
+      color: #ff0a0a;
+      margin: 0 15px;
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+      background: #ffdcdc;
+      border: 1px solid #ff0000;
+    }
+  }
+
+  /* MEDIUM MOBILE DEVICES ~375px+ */
+  .bp-mobile-medium(@rules) {
+    @media only screen and (min-width: 375px) {
+      @rules();
+    }
+  }
+}

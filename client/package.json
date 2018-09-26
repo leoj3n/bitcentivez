@@ -1,0 +1,49 @@
+{
+  "name": "bitcentivez-client",
+  "description": "Client application.",
+  "license": "MIT",
+  "homepage": "bitcentivez.herokuapp.com",
+  "repository": "https://github.com/leoj3n/bitcentivez",
+  "version": "0.0.1",
+  "main": "bitcentivez-client/index.stache!done-autorender",
+  "scripts": {
+    "build": "rm -rf ./dist && node build",
+    "test": "testee test.html --browsers firefox --reporter Spec"
+  },
+  "dependencies": {
+    "@feathersjs/feathers": "^3.1.7",
+    "@feathersjs/socketio-client": "^1.1.0",
+    "bootstrap": "^3.3.7",
+    "can": "^5.10.0",
+    "can-connect": "*",
+    "can-event-dom-enter": "*",
+    "can-stache-route-helpers": "*",
+    "done-autorender": "github:donejs/autorender#master",
+    "done-component": "^2.1.0",
+    "done-css": "^3.0.2",
+    "jquery": "^3.3.1",
+    "rollup": "^0.66.2",
+    "steal": "^2.0.0",
+    "steal-less": "^1.3.1",
+    "steal-socket.io": "^4.1.0",
+    "steal-stache": "^4.1.2",
+    "steal-tools": "^2.0.2"
+  },
+  "devDependencies": {
+    "funcunit": "^3.5.0",
+    "steal-qunit": "^1.0.2",
+    "testee": "^0.8.1"
+  },
+  "steal": {
+    "plugins": [
+      "done-css",
+      "steal-less",
+      "steal-stache",
+      "done-component"
+    ],
+    "configDependencies": [
+      "live-reload",
+      "node_modules/can-zone/register"
+    ]
+  }
+}

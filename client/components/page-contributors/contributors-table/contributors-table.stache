@@ -1,0 +1,86 @@
+<can-import from="./contributors-table.less"/>
+<can-import from="~/components/ui/model-edit-property/" />
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Active</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each(contributors)}}
+    <tr>
+      <td><model-edit-property model:from="this" property:raw="name" /></td>
+      <td><model-edit-property model:from="this" property:raw="email" /></td>
+      <td>
+        <input
+          type="checkbox"
+          checked:from="active"
+          disabled:from="isSaving()"
+          on:change="../setActive(this, scope.element.checked)"
+        />
+      </td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
+
+{{#if(isAddingContributor)}}
+<div class="panel panel-default">
+    <div class="panel-heading">Add Contributor</div>
+    <div class="panel-body">
+      <form on:submit="addContributor(scope.event)" id="new-contributor">
+        {{#if(newContributorError)}}
+          <div class="alert alert-danger" role="alert">
+            {{newContributorError}}
+          </div>
+        {{/if}}
+        <div class="row">
+          <div class="col-xs-5">
+            <label>Name:</label>
+            <input
+              type="text"
+              placeholder="Name"
+              class="form-control"
+              disabled:from="isDisabled"
+              value:bind="newContributorName"
+            />
+          </div>
+          <div class="col-xs-5">
+            <label>Email:</label>
+            <input
+              type="text"
+              class="form-control"
+              disabled:from="isDisabled"
+              placeholder="Email Address"
+              value:bind="newContributorEmail"
+            />
+          </div>
+          <div class="col-xs-2">
+            <label>Active?</label>
+            <input
+              type="checkbox"
+              class="form-control"
+              disabled:from="isDisabled"
+              checked:bind="newContributorActive"
+            />
+          </div>
+        </div>
+      </form>
+      <button
+        type="submit"
+        value="Submit"
+        form="new-contributor"
+        class="btn btn-primary"
+      >Add Contributor</button>
+      <button
+        class="btn btn-default"
+        on:click="toggleContributorInput(scope.event)"
+      >Cancel</button>
+    </div>
+</div>
+{{else}}
+  <a href="" on:click="toggleContributorInput(scope.event)">Add Contributor</a>
+{{/if}}

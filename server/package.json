@@ -1,0 +1,36 @@
+{
+  "name": "bitcentivez-server",
+  "description": "Server application.",
+  "license": "MIT",
+  "homepage": "bitcentivez.herokuapp.com",
+  "repository": "https://github.com/leoj3n/bitcentivez",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "db-migrate": "node migrate.js",
+    "develop-ssr": "npm start -- --develop",
+    "develop-static": "npm start -- --develop --static",
+    "install": "npm run db-migrate",
+    "start": "node $npm_package_main",
+    "test": "TESTING=true mocha test/ --recursive"
+  },
+  "dependencies": {
+    "@feathersjs/configuration": "^2.0.0",
+    "@feathersjs/express": "^1.2.3",
+    "@feathersjs/feathers": "^3.1.7",
+    "@feathersjs/socketio": "^3.2.2",
+    "compression": "^1.7.3",
+    "cors": "^2.8.4",
+    "db-migrate": "^0.11.1",
+    "done-ssr-middleware": "^3.0.0-pre.0",
+    "donejs-error-format": "^1.2.0",
+    "feathers-mongoose": "^6.1.2",
+    "kill-on-exit": "^1.2.0",
+    "mongoose": "^5.2.4",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "request": "^2.87.0"
+  }
+}
