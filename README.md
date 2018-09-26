@@ -14,7 +14,13 @@ mongod --config /usr/local/etc/mongod.conf
 brew services start mongodb
 ```
 
-Then, in another terminal at the root of the repo:
+Then, in another terminal, at the root of the repo:
+
+```console
+npm install
+```
+
+Once the install has finished, run the development server:
 
 ```console
 # To develop with SSR middleware:
@@ -25,6 +31,8 @@ npm run develop-static
 ```
 
 Both `develop-ssr` and `develop-static` include live-reload.
+
+Visit <http://localhost:3030/> to see the running application.
 
 ## npm run
 
