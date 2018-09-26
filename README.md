@@ -42,3 +42,12 @@ available via `npm run-script`:
   prettier-pkg
     prettier-package-json --write package.json client/package.json server/package.json
 ```
+
+## Deploy to Heroku
+
+```console
+heroku git:remote -a bitcentivez
+git push heroku master
+```
+
+Heroku will handle running the build command.
