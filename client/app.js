@@ -9,7 +9,7 @@ debug();
 const AppViewModel = DefineMap.extend('App', {
   env: {
     serialize: false,
-    default: () => ({NODE_ENV:'development'})
+    default: () => ({ NODE_ENV: 'development' }),
   },
   loaderEnv: {
     serialize: false,
