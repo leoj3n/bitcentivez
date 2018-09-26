@@ -2,6 +2,30 @@
 
 A fancy client/server application.
 
+## Quick Start
+
+In any terminal, make sure MongoDB is started:
+
+```console
+# To start MongoDB manually:
+mongod --config /usr/local/etc/mongod.conf
+
+# Or, using brew services:
+brew services start mongodb
+```
+
+Then, in another terminal at the root of the repo:
+
+```console
+# To develop with SSR middleware:
+npm run develop-ssr
+
+# Or, to develop with static middleware:
+npm run develop-static
+```
+
+Both `develop-ssr` and `develop-static` include live-reload.
+
 ## npm run
 
 Development:
