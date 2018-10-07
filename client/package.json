@@ -37,8 +37,9 @@
   },
   "steal": {
     "envs": {
-    "server-production": {
-      "renderingBaseURL": "https://bitcentivez.herokuapp.com/"
+      "server-production": {
+        "renderingBaseURL": "https://bitcentivez.herokuapp.com/"
+      }
     },
     "plugins": [
       "done-css",
