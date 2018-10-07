@@ -1,5 +1,4 @@
 {
-  "client": "../../client/dist/",
   "port": "PORT",
   "host": "bitcentivez.herokuapp.com",
   "mongodb": "MONGODB_URI"
