@@ -7,7 +7,7 @@
   "version": "0.0.1",
   "main": "bitcentivez-client/index.stache!done-autorender",
   "scripts": {
-    "build": "rm -rf ./dist && node build && cp ./production.html ./package.json ./dist",
+    "build": "rm -rf ./dist && node build && cp ./production.html ./package.json ./favicon.ico ./dist",
     "test": "testee test.html --browsers firefox --reporter Spec"
   },
   "dependencies": {
