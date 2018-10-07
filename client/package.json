@@ -21,6 +21,7 @@
     "done-autorender": "github:donejs/autorender#master",
     "done-component": "^2.1.0",
     "done-css": "^3.0.2",
+    "events": "*",
     "jquery": "^3.3.1",
     "rollup": "^0.66.2",
     "steal": "^2.0.0",
