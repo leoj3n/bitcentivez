@@ -2,8 +2,8 @@ import loader from '@loader';
 import { DefineMap, route, RoutePushstate } from 'can';
 
 //!steal-remove-start
-import { debug } from 'can';
-debug();
+// import { debug } from 'can';
+// debug();
 //!steal-remove-end
 
 const AppViewModel = DefineMap.extend('App', {
