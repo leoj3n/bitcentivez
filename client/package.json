@@ -35,11 +35,6 @@
     "testee": "^0.8.1"
   },
   "steal": {
-    "envs": {
-      "server-production": {
-        "renderingBaseURL": "https://bitcentivez.herokuapp.com/"
-      }
-    },
     "plugins": [
       "done-css",
       "steal-less",
