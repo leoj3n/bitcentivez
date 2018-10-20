@@ -1,5 +1,5 @@
 {
   "port": 3030,
   "host": "localhost",
-  "mongodb": "mongodb://localhost:27017/bitcentive"
+  "mongodb": "mongodb://localhost:27017/bitcentivez"
 }
