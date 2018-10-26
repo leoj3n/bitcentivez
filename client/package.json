@@ -7,14 +7,14 @@
   "version": "0.0.1",
   "main": "bitcentivez-client/index.stache!done-autorender",
   "scripts": {
-    "build": "rm -rf ./dist && node build && cp -r node_modules/events dist/node_modules",
+    "build": "rm -rf ./prod && mkdir ./prod && node build && cp -r ./node_modules/events ./dist/node_modules && mv ./dist ./prod && cp ./package.json ./prod",
     "test": "testee test.html --browsers firefox --reporter Spec"
   },
   "dependencies": {
     "@feathersjs/feathers": "^3.1.7",
-    "@feathersjs/socketio-client": "^1.1.0",
+    "@feathersjs/socketio-client": "^1.1.5",
     "bootstrap": "^3.3.7",
-    "can": "^5.14.0",
+    "can": "^5.15.1",
     "can-connect": "*",
     "can-event-dom-enter": "*",
     "can-stache-route-helpers": "*",
