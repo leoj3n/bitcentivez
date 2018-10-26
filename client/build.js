@@ -4,6 +4,9 @@ const buildPromise = stealTools.build(
   {},
   {
     minify: false,
-    bundleAssets: true,
-  }
+    bundleAssets: {
+      infer: true,
+      glob: ['img/**/*'],
+    },
+  },
 );
