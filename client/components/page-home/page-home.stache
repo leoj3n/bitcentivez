@@ -6,13 +6,13 @@
     <div id="auth-ui-container">
 
       <div class="auth-branding">
-        <img src="/img/bitcentive-logo.png" alt="" class="logo">
+        <img src="{{joinBase('img/bitcentive-logo.png')}}" alt="" class="logo">
       </div>
 
       <ul class="sso-providers one">
         <li class="sso-github one" title="Login with GitHub">
           <a href="{{routeUrl(page='contributors')}}">
-            <img src="/img/github.svg" alt="GitHub logo">
+            <img src="joinBase('img/github.svg')}}" alt="GitHub logo">
             <span>Login with GitHub</span>
           </a>
         </li>

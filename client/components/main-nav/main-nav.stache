@@ -12,7 +12,7 @@
         <span class="icon-bar"></span>
       </button>
       <a href="{{routeUrl(page='home')}}" class="navbar-brand">
-        <img src="/img/bitcentive-logo-brand.png" alt="" class="logo">
+        <img src="{{joinBase('img/bitcentive-logo-brand.png')}}" alt="" class="logo">
       </a>
     </div>
 
