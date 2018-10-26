@@ -7,7 +7,7 @@
   "version": "0.0.1",
   "main": "bitcentivez-client/index.stache!done-autorender",
   "scripts": {
-    "build": "rm -rf ./prod && mkdir ./prod && node build && cp -r ./node_modules/events ./dist/node_modules && mv ./dist ./prod && cp ./package.json ./favicon.ico ./prod",
+    "build": "rm -rf ./prod && mkdir ./prod && node build && mv ./dist ./prod && cp ./package.json ./favicon.ico ./prod",
     "test": "testee test.html --browsers firefox --reporter Spec"
   },
   "dependencies": {
@@ -21,6 +21,7 @@
     "done-autorender": "^2.4.1",
     "done-component": "^2.2.0",
     "done-css": "^3.0.2",
+    "events": "*",
     "jquery": "^3.3.1",
     "rollup": "^0.66.6",
     "steal": "^2.0.0",
