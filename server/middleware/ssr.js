@@ -7,7 +7,7 @@ module.exports = function(app) {
   app.use(
     ssrMiddleware(
       {
-        config: path.join(app.get('client'), 'package.json!npm'),
+        config: path.join(app.get('client'), 'prod', 'package.json!npm'),
         liveReload: process.env.NODE_ENV === 'development',
       },
       {
