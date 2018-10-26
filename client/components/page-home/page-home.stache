@@ -12,7 +12,7 @@
       <ul class="sso-providers one">
         <li class="sso-github one" title="Login with GitHub">
           <a href="{{routeUrl(page='contributors')}}">
-            <img src="joinBase('img/github.svg')}}" alt="GitHub logo">
+            <img src="{{joinBase('img/github.svg')}}" alt="GitHub logo">
             <span>Login with GitHub</span>
           </a>
         </li>
