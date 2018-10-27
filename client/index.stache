@@ -46,7 +46,7 @@
       </div>
     </div>
 
-    {{#switch env.NODE_ENV}}
+    {{#switch this.loaderEnv}}
       {{#case "production"}}
         <script src="/dist/steal.production.js"></script>
       {{/case}}
