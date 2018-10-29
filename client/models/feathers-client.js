@@ -1,10 +1,3 @@
-import io from 'steal-socket.io';
-import feathers from '@feathersjs/feathers';
-import socketio from '@feathersjs/socketio-client';
-
-const socket = io();
-const feathersClient = feathers();
-
-feathersClient.configure(socketio(socket));
+import feathersClient from '~/models/feathers-client-#{~/models/rest-or-socketio}';
 
 export default feathersClient;
