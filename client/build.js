@@ -3,10 +3,11 @@ const stealTools = require('steal-tools');
 const buildPromise = stealTools.build(
   {},
   {
-    minify: false,
+    minify: true,
     bundleAssets: {
       infer: true,
       glob: ['img/**/*'],
     },
+    treeShaking: false,
   }
 );
