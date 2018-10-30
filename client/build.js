@@ -8,6 +8,5 @@ const buildPromise = stealTools.build(
       infer: true,
       glob: ['img/**/*'],
     },
-    treeShaking: false,
   }
 );
