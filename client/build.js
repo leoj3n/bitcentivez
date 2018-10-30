@@ -3,7 +3,7 @@ const stealTools = require('steal-tools');
 const buildPromise = stealTools.build(
   {},
   {
-    minify: true,
+    minify: false,
     bundleAssets: {
       infer: true,
       glob: ['img/**/*'],
