@@ -39,7 +39,7 @@
   "steal": {
     "envs": {
       "server-production": {
-        "baseURL": "./dist"
+        "renderingBaseURL": "https://bitcentivez.herokuapp.com/dist"
       }
     },
     "plugins": [
