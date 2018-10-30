@@ -39,7 +39,7 @@
   "steal": {
     "envs": {
       "server-production": {
-        "baseURL": "./dist",
+        "baseURL": "./dist"
       }
     },
     "plugins": [
