@@ -37,7 +37,6 @@
     "testee": "^0.8.1"
   },
   "steal": {
-    "treeShaking": false,
     "envs": {
       "server-production": {
         "renderingBaseURL": "https://bitcentivez.herokuapp.com/dist"
