@@ -1,9 +1,5 @@
 import superModel from '~/lib/super-model';
 import feathersQuery from './feathers-query';
-
-import '~/models/feathers-client-rest#?always-false';
-import '~/models/feathers-client-socketio#?always-false';
-
 import feathersClient from './feathers-client';
 import { DefineMap, DefineList, QueryLogic } from 'can';
 
