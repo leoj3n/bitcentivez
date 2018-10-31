@@ -1,3 +1,12 @@
-import feathersClient from '~/models/feathers-client-#{~/models/rest-or-socketio}';
+import feathersClientRest from '~/models/feathers-client-rest';
+import feathersClientSocketio from '~/models/feathers-client-socketio';
 
-export default feathersClient;
+let chosenClient;
+
+if (System.isPlatform("window")) {
+  chosenClient = feathersClientSocketio;
+} else {
+  chosenClient = feathersClientRest;
+}
+
+export default chosenClient;

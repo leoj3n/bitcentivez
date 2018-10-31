@@ -2,9 +2,15 @@ import io from 'steal-socket.io';
 import feathers from '@feathersjs/feathers';
 import socketio from '@feathersjs/socketio-client';
 
-const socket = io();
-const feathersClient = feathers();
+let feathersClient;
 
-feathersClient.configure(socketio(socket));
+if (System.isPlatform("window")) {
+  const socket = io();
+  feathersClient = feathers();
+
+  feathersClient.configure(socketio(socket));
+} else {
+  feathersClient = false;
+}
 
 export default feathersClient;
