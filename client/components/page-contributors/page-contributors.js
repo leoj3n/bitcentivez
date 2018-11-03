@@ -4,9 +4,9 @@ import Contributor from '~/models/contributor';
 
 export const ViewModel = DefineMap.extend('PageContributors', {
   get contributors() {
-    return CanZone.ignore(function() {
+    //return CanZone.ignore(function() {
       return Contributor.getList({});
-    })();
+    //})();
   },
 });
 
