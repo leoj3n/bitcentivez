@@ -11,6 +11,7 @@ module.exports = function(app) {
         liveReload: process.env.NODE_ENV === 'development',
       },
       {
+        strategy: "safe",
         debug: process.env.NODE_ENV === 'development',
       }
     )
