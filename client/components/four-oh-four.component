@@ -1,12 +1,11 @@
 <can-component tag="page-four-oh-four">
   <style type="text/less">
-    height: 100%;
+    height: 80vh;
     display: block;
 
-    .four-oh-four {
-      top: 30%;
+    div {
+      top: 40vh;
       color: white;
-      height: 290px;
       position: relative;
       text-align: center;
       transform: translateY(-50%);
@@ -18,12 +17,12 @@
       }
 
       h3 {
-        font-weight: 500;
+        font-weight: 700;
       }
     }
   </style>
   <view>
-    <div class="four-oh-four">
+    <div>
       <h1>404</h1>
       <h3>The page you requested cannot be found.</h3>
     </div>

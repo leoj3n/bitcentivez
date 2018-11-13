@@ -1,5 +1,4 @@
 <can-import from="./page-home.less" />
-<can-import from="can-stache-route-helpers" />
 
 <div class="auth">
   <div class="auth-ui">

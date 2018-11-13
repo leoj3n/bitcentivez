@@ -9,48 +9,29 @@
     <can-import from="jquery" />
     <can-import from="bootstrap" />
     <can-import from="bootstrap/dist/css/bootstrap.css" />
-    <can-import from="~/styles.less" />
 
-    <can-import from="~/app" export-as="viewModel" />
-    <can-import from="~/components/loading-indicator/" />
+    <can-import from="~/styles.less" />
     <can-import from="~/components/main-nav/" />
+    <can-import from="~/components/loading-indicator/" />
+    <can-import from="~/components/loading-indicator/loading-text/" />
+    <can-import from="~/app" export-as="viewModel" route-data="routeData" />
 
     <main-nav/>
 
-    {{#switch(this.page)}}
-      {{#case 'home'}}
-        <can-import from="~/components/page-home/" can-tag="loading-indicator">
-          <page-home/>
-        </can-import>
-      {{/case}}
+    {{#if this.pageComponent.isResolved}}
+      {{this.pageComponent.value}}
+    {{else}}
+      <loading-text/>
+    {{/if}}
 
-      {{#case 'contributors'}}
-        <can-import from="~/components/page-contributors/" can-tag="loading-indicator">
-          <page-contributors/>
-        </can-import>
-      {{/case}}
-
-      {{#default}}
-        <can-import from="~/components/four-oh-four.component" can-tag="loading-indicator">
-          <page-four-oh-four/>
-        </can-import>
-      {{/default}}
-    {{/switch}}
-
-    <div style="position: absolute; bottom: 0; left: 0;">
-      <div style="background: yellow; color: black; border-top-right-radius: 5px;">
-        <div style="padding: 10px; font-weight: bold;">Stache Variables</div>
-        <div style="padding: 10px;">this.loaderEnv: {{this.loaderEnv}}</div>
-        <div style="padding: 10px;">this.env.NODE_ENV: {{this.env.NODE_ENV}}</div>
-        <div style="padding: 10px;">joinBase: {{joinBase('blah')}}</div>
-      </div>
-    </div>
-
-    {{#switch this.loaderEnv}}
+    {{#switch this.env.NODE_ENV}}
       {{#case "production"}}
         <script src="/dist/steal.production.js"></script>
       {{/case}}
       {{#default}}
+        <can-import from="~/components/debug-variables.component" can-tag="loading-indicator">
+          <debug-variables env:from="this.env" />
+        </can-import>
         <script src="/node_modules/steal/steal.js" main data-autorender-debug-break></script>
       {{/default}}
     {{/switch}}

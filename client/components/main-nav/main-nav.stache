@@ -1,5 +1,4 @@
 <can-import from="./main-nav.less" />
-<can-import from="can-stache-route-helpers" />
 
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container">

@@ -3,8 +3,10 @@ import { Component, DefineMap } from 'can';
 
 export const ViewModel = DefineMap.extend('PageHome', {});
 
-export default Component.extend({
+export const PageHome = Component.extend({
   tag: 'page-home',
   ViewModel: ViewModel,
   view: view,
 });
+
+export { PageHome as Component };

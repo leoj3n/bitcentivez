@@ -1,0 +1,28 @@
+<can-component tag="debug-variables">
+  <style type="text/less">
+    left: 0;
+    bottom: 0;
+    position: absolute;
+
+    div {
+      color: black;
+      background: yellow;
+      border-top-right-radius: 5px;
+
+      & div {
+        padding: 10px;
+
+        &:first-child {
+          font-weight: bold;
+        }
+      }
+    }
+  </style>
+  <view>
+    <div>
+      <div>Stache Variables</div>
+      <div>this.env.NODE_ENV: {{this.env.NODE_ENV}}</div>
+      <div>joinBase: {{joinBase('blah')}}</div>
+    </div>
+  </view>
+</can-component>
