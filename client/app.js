@@ -24,9 +24,6 @@ const AppViewModel = DefineMap.extend('App', {
   routeData: {
     default: () => route.data,
   },
-  env: {
-    default: () => ({ NODE_ENV: 'development' }),
-  },
   title: {
     default: 'Bitcentivez',
   },

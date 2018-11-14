@@ -1,7 +1,0 @@
-<can-import from="./loading-text/" />
-
-{{#isResolved}}
-  <content/>
-{{else}}
-  <loading-text/>
-{{/isResolved}}
