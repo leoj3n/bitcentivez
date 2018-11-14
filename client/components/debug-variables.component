@@ -21,7 +21,6 @@
   <view>
     <div>
       <div>Stache Variables</div>
-      <div>this.env.NODE_ENV: {{this.env.NODE_ENV}}</div>
       <div>joinBase: {{joinBase('blah')}}</div>
     </div>
   </view>
