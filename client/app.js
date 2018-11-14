@@ -3,7 +3,6 @@ import { debug } from 'can';
 debug();
 //!steal-remove-end
 
-import loader from '@loader';
 import {
   DefineMap,
   route,
@@ -12,6 +11,8 @@ import {
   stache,
   stacheRouteHelpers,
 } from 'can';
+
+import loader from '@loader';
 
 stache.addHelper(stacheRouteHelpers);
 
@@ -31,7 +32,7 @@ const AppViewModel = DefineMap.extend('App', {
     default: undefined,
   },
   get pageComponent() {
-    var moduleName = `~/components/${this.pageComponentConfig.moduleName}`;
+    const moduleName = `~/components/${this.pageComponentConfig.moduleName}`;
     return steal.import(moduleName).then(({ Component }) => {
       return new Component({ viewModel: this.pageComponentConfig.viewModel() });
     });
@@ -66,13 +67,13 @@ const AppViewModel = DefineMap.extend('App', {
   },
   statusCode: {
     get: function(lastSet, resolve) {
-      var pageConfig = this.pageComponentConfig;
+      const pageConfig = this.pageComponentConfig;
 
       if (pageConfig.statusCode) {
         return pageConfig.statusCode;
       }
 
-      var pagePromise = this.pagePromise;
+      const pagePromise = this.pagePromise;
 
       if (pagePromise) {
         // pagePromise is guaranteed to be resolved here because done-ssr will

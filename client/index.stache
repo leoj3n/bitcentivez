@@ -12,8 +12,8 @@
 
     <can-import from="~/styles.less" />
     <can-import from="~/components/main-nav/" />
-    <can-import from="~/components/loading-tag.component!" />
-    <can-import from="~/components/loading-text.component!" />
+    <can-import from="~/components/loading-tag.component" />
+    <can-import from="~/components/loading-text.component" />
     <can-import from="~/app" export-as="viewModel" route-data="routeData" />
 
     <main-nav/>
