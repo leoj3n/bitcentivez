@@ -45,6 +45,8 @@
       "~/components/page-home/",
       "~/components/page-contributors/",
       "~/components/page-contributors/contributors-table/",
+      "~/models/feathers-client-rest",
+      "~/models/feathers-client-socketio",
       "~/components/four-oh-four.component"
     ],
     "plugins": [
