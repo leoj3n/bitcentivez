@@ -26,7 +26,6 @@
 
     {{#switch this.env.NODE_ENV}}
       {{#case "production"}}
-        PRODUCTION
         <script src="/dist/steal.production.js"></script>
       {{/case}}
       {{#default}}
