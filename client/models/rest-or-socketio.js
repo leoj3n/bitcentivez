@@ -1,1 +1,1 @@
-export default System.isPlatform('window') ? 'socketio' : 'rest';
+export default (System.isPlatform('window') ? 'socketio' : 'rest');

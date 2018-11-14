@@ -10,20 +10,20 @@
     </tr>
   </thead>
   <tbody>
-  {{#each(contributors)}}
+  {{#for (contributor of contributors)}}
     <tr>
-      <td><model-edit-property model:from="this" property:raw="name" /></td>
-      <td><model-edit-property model:from="this" property:raw="email" /></td>
+      <td><model-edit-property model:from="contributor" property:raw="name" /></td>
+      <td><model-edit-property model:from="contributor" property:raw="email" /></td>
       <td>
         <input
           type="checkbox"
-          checked:from="active"
-          disabled:from="isSaving()"
-          on:change="../setActive(this, scope.element.checked)"
+          checked:from="contributor.active"
+          disabled:from="contributor.isSaving()"
+          on:change="this.setActive(contributor, scope.element.checked)"
         />
       </td>
     </tr>
-  {{/each}}
+  {{/for}}
   </tbody>
 </table>
 
