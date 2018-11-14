@@ -34,7 +34,7 @@ const AppViewModel = DefineMap.extend('App', {
     default: undefined,
   },
   get pageComponent() {
-    var moduleName = '~/components/' + this.pageComponentConfig.moduleName;
+    var moduleName = `~/components/${this.pageComponentConfig.moduleName}`;
     return steal.import(moduleName).then(({ Component }) => {
       return new Component({ viewModel: this.pageComponentConfig.viewModel() });
     });
@@ -81,10 +81,10 @@ const AppViewModel = DefineMap.extend('App', {
         // pagePromise is guaranteed to be resolved here because done-ssr will
         // not call the statusCode getter until the app is done loading
         return pagePromise.then(
-          function() {
+          () => {
             resolve(200);
           },
-          function() {
+          () => {
             resolve(404);
           }
         );

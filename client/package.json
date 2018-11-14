@@ -41,6 +41,12 @@
         "renderingBaseURL": "https://bitcentivez.herokuapp.com/dist"
       }
     },
+    "bundle": [
+      "~/components/page-home/",
+      "~/components/page-contributors/",
+      "~/components/page-contributors/contributors-table/",
+      "~/components/four-oh-four.component!"
+    ],
     "plugins": [
       "done-css",
       "steal-less",
