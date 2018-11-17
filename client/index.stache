@@ -30,7 +30,7 @@
       {{/case}}
       {{#default}}
         <can-import from="~/components/debug-variables.component" can-tag="loading-tag">
-          <debug-variables env:from="this.env" />
+          <debug-variables/>
         </can-import>
         <script src="/node_modules/steal/steal.js" main data-autorender-debug-break></script>
       {{/default}}
