@@ -1,22 +1,5 @@
 <can-import from="./page-home.less" />
 
-<div class="auth">
-  <div class="auth-ui">
-    <div id="auth-ui-container">
-
-      <div class="auth-branding">
-        <img src="{{joinBase('img/bitcentive-logo.png')}}" alt="" class="logo">
-      </div>
-
-      <ul class="sso-providers one">
-        <li class="sso-github one" title="Login with GitHub">
-          <a href="{{routeUrl(page='contributors')}}">
-            <img src="{{joinBase('img/github.svg')}}" alt="GitHub logo">
-            <span>Login with GitHub</span>
-          </a>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-</div>
+<a href="{{routeUrl(page='contributors')}}">
+  <img src="{{joinBase('img/bitcentive-logo.png')}}" alt="">
+</a>

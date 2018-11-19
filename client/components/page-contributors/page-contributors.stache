@@ -1,6 +1,6 @@
 <can-import from="./page-contributors.less" />
 
-<div class="container">
+<div>
   <h2>Contributors</h2>
   {{#if contributors.isResolved}}
     <can-dynamic-import from="./contributors-table/">

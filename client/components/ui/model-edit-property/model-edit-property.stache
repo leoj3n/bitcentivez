@@ -7,9 +7,8 @@
   {{#if(isEditing)}}
     <input
       type="{{type}}"
-      class="form-control"
       value:from="propertyValue"
-       disabled:from="isDisabled"
+      disabled:from="isDisabled"
       on:keydown="cancelEdit(scope.event)"
       on:enter="commitValue(scope.element.value)"
     />

@@ -1,7 +1,7 @@
 <can-import from="./contributors-table.less"/>
 <can-import from="~/components/ui/model-edit-property/" />
 
-<table class="table">
+<table>
   <thead>
     <tr>
       <th>Name</th>
@@ -28,41 +28,38 @@
 </table>
 
 {{#if(isAddingContributor)}}
-<div class="panel panel-default">
-    <div class="panel-heading">Add Contributor</div>
-    <div class="panel-body">
+<div>
+    <div>Add Contributor</div>
+    <div>
       <form on:submit="addContributor(scope.event)" id="new-contributor">
         {{#if(newContributorError)}}
-          <div class="alert alert-danger" role="alert">
+          <div role="alert">
             {{newContributorError}}
           </div>
         {{/if}}
-        <div class="row">
-          <div class="col-xs-5">
+        <div>
+          <div>
             <label>Name:</label>
             <input
               type="text"
               placeholder="Name"
-              class="form-control"
               disabled:from="isDisabled"
               value:bind="newContributorName"
             />
           </div>
-          <div class="col-xs-5">
+          <div>
             <label>Email:</label>
             <input
               type="text"
-              class="form-control"
               disabled:from="isDisabled"
               placeholder="Email Address"
               value:bind="newContributorEmail"
             />
           </div>
-          <div class="col-xs-2">
+          <div>
             <label>Active?</label>
             <input
               type="checkbox"
-              class="form-control"
               disabled:from="isDisabled"
               checked:bind="newContributorActive"
             />
@@ -73,10 +70,8 @@
         type="submit"
         value="Submit"
         form="new-contributor"
-        class="btn btn-primary"
       >Add Contributor</button>
       <button
-        class="btn btn-default"
         on:click="toggleContributorInput(scope.event)"
       >Cancel</button>
     </div>

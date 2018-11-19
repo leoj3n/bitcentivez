@@ -1,24 +1,7 @@
 <can-component tag="page-four-oh-four">
   <style type="text/less">
-    height: 80vh;
-    display: block;
-
-    div {
-      top: 40vh;
-      color: white;
-      position: relative;
-      text-align: center;
-      transform: translateY(-50%);
-
-      h1 {
-        font-size: 170px;
-        margin-bottom: 0;
-        line-height: 170px;
-      }
-
-      h3 {
-        font-weight: 700;
-      }
+    & {
+      display: block;
     }
   </style>
   <view>

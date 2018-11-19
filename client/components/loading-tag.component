@@ -1,10 +1,7 @@
 <can-component tag="loading-tag">
   <style type="text/less">
-    display: block;
-
-    h4 {
-      color: white;
-      font-weight: 700;
+    & {
+      display: block;
     }
   </style>
   <view>
