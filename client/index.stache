@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <can-import from="events" />
-
     <can-import from="~/styles.less" />
     <can-import from="~/components/main-nav/" />
     <can-import from="~/components/loading-tag.component" />
