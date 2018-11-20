@@ -24,6 +24,7 @@
     "db-migrate": "^0.11.4",
     "done-ssr-middleware": "^3.0.0",
     "donejs-error-format": "^1.2.0",
+    "events": "^3.0.0",
     "feathers-mongoose": "^6.2.0",
     "kill-on-exit": "^1.2.0",
     "mongoose": "^5.3.11",
