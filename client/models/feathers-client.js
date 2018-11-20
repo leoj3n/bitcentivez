@@ -1,3 +1,3 @@
-import feathersClient from '~/models/feathers-client-#{~/models/rest-or-socketio}';
+import feathersClient from '~/models/feathers-client-rest';
 
 export default feathersClient;
