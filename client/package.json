@@ -41,7 +41,6 @@
       }
     },
     "bundle": [
-      "~/node_modules/events/events",
       "~/components/page-home/",
       "~/components/page-contributors/",
       "~/components/page-contributors/contributors-table/",
