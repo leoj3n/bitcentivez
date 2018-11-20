@@ -14,7 +14,6 @@
     "@feathersjs/feathers": "^3.1.7",
     "@feathersjs/rest-client": "^1.4.5",
     "@feathersjs/socketio-client": "^1.1.5",
-    "bootstrap": "^3.3.7",
     "jquery": "^3.3.1",
     "can": "^5.16.4",
     "can-connect": "^3.0.5",
