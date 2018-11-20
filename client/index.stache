@@ -7,10 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <can-import from="jquery" />
-    <can-import from="bootstrap" />
-    <can-import from="bootstrap/dist/css/bootstrap.css" />
-
     <can-import from="~/styles.less" />
     <can-import from="~/components/main-nav/" />
     <can-import from="~/components/loading-tag.component" />
