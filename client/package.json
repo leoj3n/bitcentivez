@@ -7,7 +7,7 @@
   "version": "0.0.1",
   "main": "bitcentivez-client/index.stache!done-autorender",
   "scripts": {
-    "build": "rm -rf ./prod && mkdir ./prod && node build && mkdir -p ./dist/node_modules/events && cp -R ./node_modules/events/. ./dist/node_modules/events/ && mv ./dist ./prod && cp ./package.json ./favicon.ico ./prod/",
+    "build": "rm -rf ./prod && mkdir ./prod && node build && cp -r ./node_modules/events ./dist/node_modules && mv ./dist ./prod && cp ./package.json ./favicon.ico ./prod",
     "test": "testee test.html --browsers firefox --reporter Spec"
   },
   "dependencies": {
