@@ -41,7 +41,7 @@
       }
     },
     "map": {
-      "events": "~/node_modules/events/events"
+      "events": "~/dist/bundles/bitcentivez-client/node_modules/events/events.js"
     },
     "bundle": [
       "~/node_modules/events/events",
