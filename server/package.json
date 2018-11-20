@@ -22,11 +22,11 @@
     "compression": "^1.7.3",
     "cors": "^2.8.5",
     "db-migrate": "^0.11.4",
-    "done-ssr-middleware": "^3.0.0-pre.0",
+    "done-ssr-middleware": "^3.0.0",
     "donejs-error-format": "^1.2.0",
     "feathers-mongoose": "^6.2.0",
     "kill-on-exit": "^1.2.0",
-    "mongoose": "^5.3.11",
+    "mongoose": "^5.3.13",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
