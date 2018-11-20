@@ -42,7 +42,7 @@
     },
     "map": {
       "events": "./node_modules/events/events.js"
-    }
+    },
     "bundle": [
       "~/components/page-home/",
       "~/components/page-contributors/",
