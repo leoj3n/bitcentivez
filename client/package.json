@@ -40,10 +40,6 @@
         "renderingBaseURL": "https://bitcentivez.herokuapp.com/dist"
       }
     },
-    "map": {
-      "events": "~/dist/bundles/bitcentivez-client/node_modules/events/events.js",
-      "dist/node_modules/events/events.js": "~/dist/bundles/bitcentivez-client/node_modules/events/events.js"
-    },
     "bundle": [
       "~/node_modules/events/events",
       "~/components/page-home/",
