@@ -22,7 +22,7 @@
     "done-autorender": "^2.4.3",
     "done-component": "^2.2.0",
     "done-css": "^3.0.2",
-    "rollup": "^0.67.1",
+    "rollup": "^0.67.3",
     "steal": "^2.1.8",
     "steal-conditional": "^1.1.2",
     "steal-less": "^1.3.2",
