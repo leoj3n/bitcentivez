@@ -6,4 +6,6 @@ const feathersClient = feathers();
 
 feathersClient.configure(restClient.fetch(window.fetch));
 
+console.log('Using rest.');
+
 export default feathersClient;

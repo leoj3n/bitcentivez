@@ -7,4 +7,6 @@ const feathersClient = feathers();
 
 feathersClient.configure(socketio(socket));
 
+console.log('Using socketio.');
+
 export default feathersClient;

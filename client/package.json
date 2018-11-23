@@ -37,6 +37,16 @@
     "envs": {
       "server-production": {
         "renderingBaseURL": "https://bitcentivez.herokuapp.com/dist"
+      },
+      "window-production": {
+        "map": {
+          "~/models/feathers-client-rest": "~/models/feathers-client-socketio"
+        }
+      },
+      "window-development": {
+        "map": {
+          "~/models/feathers-client-rest": "~/models/feathers-client-socketio"
+        }
       }
     },
     "bundle": [
