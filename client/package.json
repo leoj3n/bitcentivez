@@ -36,16 +36,14 @@
   "steal": {
     "envs": {
       "server-production": {
-        "renderingBaseURL": "https://bitcentivez.herokuapp.com/dist"
-      },
-      "window-production": {
+        "renderingBaseURL": "https://bitcentivez.herokuapp.com/dist",
         "map": {
-          "~/models/feathers-client-rest": "~/models/feathers-client-socketio"
+          "~/models/feathers-client-socketio": "~/models/feathers-client-rest"
         }
       },
-      "window-development": {
+      "server-development": {
         "map": {
-          "~/models/feathers-client-rest": "~/models/feathers-client-socketio"
+          "~/models/feathers-client-socketio": "~/models/feathers-client-rest"
         }
       }
     },

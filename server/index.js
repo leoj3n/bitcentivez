@@ -3,6 +3,7 @@
 // environment
 
 if (process.argv.indexOf('--develop') !== -1) {
+  process.env.DONE_SSR_DEBUG = 1;
   process.env.NODE_ENV = 'development';
 }
 
