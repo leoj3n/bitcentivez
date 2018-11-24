@@ -10,7 +10,7 @@ module.exports = function(app) {
 
     if (isPushstateRoute) {
       const env = process.env.NODE_ENV || 'production';
-      const htmlPath = path.join(app.get('client'), env + '.html');
+      const htmlPath = path.join(app.get('client'), `${env}.html`);
 
       if (fs.existsSync(htmlPath)) {
         return res.sendFile(htmlPath);
