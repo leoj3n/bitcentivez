@@ -21,7 +21,9 @@
       <loading-text/>
     {{/if}}
 
-    {{#switch env.NODE_ENV}}
+    <h1>NODE_ENV: {{env.NODE_ENV}}</h1>
+
+    {{#switch this.env.NODE_ENV}}
       {{#case "production"}}
         <script src="/dist/steal.production.js"></script>
       {{/case}}
