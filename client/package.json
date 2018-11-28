@@ -38,12 +38,12 @@
       "server-production": {
         "renderingBaseURL": "https://bitcentivez.herokuapp.com/dist",
         "map": {
-          "~/models/feathers-client-socketio": "~/models/feathers-client-rest"
+          "~/models/feathers-client": "~/models/feathers-client-rest"
         }
       },
       "server-development": {
         "map": {
-          "~/models/feathers-client-socketio": "~/models/feathers-client-rest"
+          "~/models/feathers-client": "~/models/feathers-client-rest"
         }
       }
     },

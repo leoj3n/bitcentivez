@@ -25,6 +25,7 @@ app
   .configure(express.rest())
   .configure(socketio())
   .configure(services)
+  .use('/node_modules', express.static(path.join(app.get('client'), '..', 'node_modules')))
   .use(express.static(app.get('client')))
   .configure(middleware);
 
