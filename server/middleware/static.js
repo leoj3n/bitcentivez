@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = function(app) {
-  app.get('*', function(req, res, next) {
+  app.get('*', (req, res, next) => {
     const urlParts = path.parse(req.url);
     const isPushstateRoute = !urlParts.ext || urlParts.name.includes('?');
 

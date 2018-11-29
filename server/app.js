@@ -26,6 +26,9 @@ app
   .configure(socketio())
   .configure(services)
   .use(express.static(app.get('client')))
+  .use('/node_modules', (req, res) => {
+    res.sendStatus(404);
+  })
   .configure(middleware);
 
 app.on('connection', connection => {

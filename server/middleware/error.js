@@ -3,7 +3,7 @@
 const errorFormat = require('donejs-error-format');
 
 module.exports = function(app) {
-  app.use(function(error, request, response, next) {
+  app.use((error, request, response, next) => {
     const html = errorFormat.html(errorFormat.extract(error), {
       liveReload: process.env.NODE_ENV === 'development',
     });
